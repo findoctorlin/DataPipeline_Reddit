@@ -1,0 +1,840 @@
+[2024-02-20T23:24:24.168+0000] {processor.py:157} INFO - Started process (PID=29) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:24:24.170+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:24:24.173+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:24:24.172+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:24:24.381+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:24:24.379+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:24:24.382+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:24:24.400+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.234 seconds
+[2024-02-20T23:24:54.577+0000] {processor.py:157} INFO - Started process (PID=30) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:24:54.578+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:24:54.582+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:24:54.582+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:24:54.935+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:24:54.932+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:24:54.935+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:24:54.955+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.383 seconds
+[2024-02-20T23:26:04.666+0000] {processor.py:157} INFO - Started process (PID=29) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:26:04.668+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:26:04.673+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:26:04.673+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:26:05.030+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:26:05.026+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:26:05.031+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:26:05.054+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.400 seconds
+[2024-02-20T23:26:35.312+0000] {processor.py:157} INFO - Started process (PID=30) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:26:35.313+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:26:35.316+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:26:35.316+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:26:35.489+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:26:35.487+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:26:35.489+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:26:35.500+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.191 seconds
+[2024-02-20T23:27:05.562+0000] {processor.py:157} INFO - Started process (PID=31) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:27:05.563+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:27:05.566+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:27:05.566+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:27:05.722+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:27:05.720+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:27:05.722+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:27:05.729+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.173 seconds
+[2024-02-20T23:27:36.071+0000] {processor.py:157} INFO - Started process (PID=32) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:27:36.072+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:27:36.074+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:27:36.074+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:27:36.222+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:27:36.221+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:27:36.222+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:27:36.232+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.166 seconds
+[2024-02-20T23:28:06.395+0000] {processor.py:157} INFO - Started process (PID=33) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:28:06.396+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:28:06.399+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:28:06.399+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:28:06.548+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:28:06.547+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:28:06.549+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:28:06.560+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.170 seconds
+[2024-02-20T23:28:36.818+0000] {processor.py:157} INFO - Started process (PID=34) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:28:36.819+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:28:36.822+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:28:36.822+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:28:36.974+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:28:36.972+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:28:36.974+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:28:36.983+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.169 seconds
+[2024-02-20T23:29:07.135+0000] {processor.py:157} INFO - Started process (PID=35) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:29:07.137+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:29:07.140+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:29:07.139+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:29:07.291+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:29:07.289+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:29:07.291+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:29:07.298+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.169 seconds
+[2024-02-20T23:29:37.564+0000] {processor.py:157} INFO - Started process (PID=36) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:29:37.566+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:29:37.569+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:29:37.568+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:29:37.663+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:29:37.661+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:29:37.663+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:29:37.671+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.112 seconds
+[2024-02-20T23:30:07.886+0000] {processor.py:157} INFO - Started process (PID=37) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:30:07.887+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:30:07.890+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:30:07.889+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:30:07.977+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:30:07.975+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:30:07.977+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:30:07.985+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.104 seconds
+[2024-02-20T23:30:38.194+0000] {processor.py:157} INFO - Started process (PID=38) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:30:38.195+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:30:38.199+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:30:38.198+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:30:38.289+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:30:38.287+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:30:38.289+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:30:38.298+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.109 seconds
+[2024-02-20T23:31:08.576+0000] {processor.py:157} INFO - Started process (PID=39) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:31:08.578+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:31:08.580+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:31:08.580+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:31:08.670+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:31:08.668+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:31:08.670+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:31:08.678+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.106 seconds
+[2024-02-20T23:31:38.955+0000] {processor.py:157} INFO - Started process (PID=40) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:31:38.956+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:31:38.959+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:31:38.959+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:31:39.052+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:31:39.050+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:31:39.052+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:31:39.060+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.110 seconds
+[2024-02-20T23:32:09.406+0000] {processor.py:157} INFO - Started process (PID=41) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:32:09.407+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:32:09.409+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:32:09.408+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:32:09.487+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:32:09.485+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:32:09.487+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:32:09.495+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.092 seconds
+[2024-02-20T23:32:39.761+0000] {processor.py:157} INFO - Started process (PID=42) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:32:39.763+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:32:39.766+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:32:39.765+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:32:39.858+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:32:39.856+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:32:39.858+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:32:39.866+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.110 seconds
+[2024-02-20T23:33:10.167+0000] {processor.py:157} INFO - Started process (PID=43) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:33:10.169+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:33:10.172+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:33:10.171+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:33:10.270+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:33:10.269+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:33:10.271+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:33:10.279+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.117 seconds
+[2024-02-20T23:33:40.505+0000] {processor.py:157} INFO - Started process (PID=44) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:33:40.506+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:33:40.511+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:33:40.510+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:33:40.604+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:33:40.602+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:33:40.604+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:33:40.614+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.115 seconds
+[2024-02-20T23:34:10.914+0000] {processor.py:157} INFO - Started process (PID=45) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:34:10.915+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:34:10.920+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:34:10.920+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:34:11.020+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:34:11.018+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:34:11.021+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:34:11.030+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.123 seconds
+[2024-02-20T23:34:41.262+0000] {processor.py:157} INFO - Started process (PID=46) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:34:41.263+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:34:41.268+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:34:41.268+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:34:41.359+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:34:41.358+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:34:41.360+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:34:41.368+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.111 seconds
+[2024-02-20T23:35:11.601+0000] {processor.py:157} INFO - Started process (PID=47) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:35:11.602+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:35:11.604+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:35:11.604+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:35:11.676+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:35:11.674+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:35:11.676+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:35:11.685+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.086 seconds
+[2024-02-20T23:35:42.052+0000] {processor.py:157} INFO - Started process (PID=48) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:35:42.053+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:35:42.055+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:35:42.055+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:35:42.128+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:35:42.126+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:35:42.128+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:35:42.136+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.088 seconds
+[2024-02-20T23:36:12.393+0000] {processor.py:157} INFO - Started process (PID=49) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:36:12.394+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:36:12.398+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:36:12.397+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:36:12.491+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:36:12.489+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:36:12.491+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:36:12.499+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.111 seconds
+[2024-02-20T23:36:42.674+0000] {processor.py:157} INFO - Started process (PID=50) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:36:42.675+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:36:42.679+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:36:42.679+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:36:42.770+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:36:42.768+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:36:42.770+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:36:42.779+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.110 seconds
+[2024-02-20T23:37:13.036+0000] {processor.py:157} INFO - Started process (PID=51) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:37:13.037+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:37:13.041+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:37:13.040+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:37:13.136+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:37:13.134+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:37:13.136+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:37:13.145+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.113 seconds
+[2024-02-20T23:37:43.332+0000] {processor.py:157} INFO - Started process (PID=52) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:37:43.334+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:37:43.338+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:37:43.337+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:37:43.430+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:37:43.429+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:37:43.431+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:37:43.439+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.113 seconds
+[2024-02-20T23:38:13.650+0000] {processor.py:157} INFO - Started process (PID=53) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:38:13.651+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:38:13.656+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:38:13.655+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:38:13.750+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:38:13.748+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:38:13.750+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:38:13.758+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.113 seconds
+[2024-02-20T23:38:43.943+0000] {processor.py:157} INFO - Started process (PID=54) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:38:43.944+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:38:43.947+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:38:43.947+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:38:44.039+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:38:44.037+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:38:44.039+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:38:44.048+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.110 seconds
+[2024-02-20T23:39:14.277+0000] {processor.py:157} INFO - Started process (PID=55) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:39:14.280+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:39:14.283+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:39:14.283+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:39:14.383+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:39:14.381+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:39:14.383+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:39:14.393+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.121 seconds
+[2024-02-20T23:39:44.566+0000] {processor.py:157} INFO - Started process (PID=56) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:39:44.567+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:39:44.569+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:39:44.569+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:39:44.655+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:39:44.653+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:39:44.655+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:39:44.664+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.102 seconds
+[2024-02-20T23:40:14.923+0000] {processor.py:157} INFO - Started process (PID=57) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:40:14.924+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:40:14.927+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:40:14.927+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:40:15.019+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:40:15.018+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:40:15.019+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:40:15.028+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.110 seconds
+[2024-02-20T23:40:45.225+0000] {processor.py:157} INFO - Started process (PID=58) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:40:45.226+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:40:45.229+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:40:45.229+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:40:45.322+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:40:45.320+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:40:45.322+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:40:45.331+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.111 seconds
+[2024-02-20T23:41:15.710+0000] {processor.py:157} INFO - Started process (PID=59) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:41:15.711+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:41:15.716+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:41:15.715+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:41:15.807+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:41:15.805+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:41:15.808+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:41:15.817+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.111 seconds
+[2024-02-20T23:56:56.394+0000] {processor.py:157} INFO - Started process (PID=60) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:56:56.395+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:56:56.397+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:56:56.396+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:56:56.479+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:56:56.477+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:56:56.479+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:56:56.488+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.096 seconds
+[2024-02-20T23:57:26.830+0000] {processor.py:157} INFO - Started process (PID=61) to work on /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:57:26.831+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2024-02-20T23:57:26.834+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:57:26.833+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:57:26.927+0000] {logging_mixin.py:151} INFO - [2024-02-20T23:57:26.925+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 10, in <module>
+    from pipelines.aws_s3_pipeline import upload_s3_pipeline
+  File "/opt/airflow/pipelines/aws_s3_pipeline.py", line 1, in <module>
+    from etls.aws_etl import connect_to_s3, create_bucket_if_not_exist, upload_to_s3
+  File "/opt/airflow/etls/aws_etl.py", line 2, in <module>
+    from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+  File "/opt/airflow/utils/constants.py", line 7, in <module>
+    SECRET = parser.get('api_keys', 'reddit_secret_key')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'api_keys'
+[2024-02-20T23:57:26.927+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2024-02-20T23:57:26.937+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.112 seconds
