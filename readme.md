@@ -1,4 +1,4 @@
-# YT_Reddit Data Pipeline Engineering | AWS End to End Data Engineering
+# Reddit Data Pipeline Engineering | AWS End to End Data Engineering
 
 # Tools & Services
 
